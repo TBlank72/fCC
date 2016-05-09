@@ -1,0 +1,38 @@
+/*Custom CSS for Random Quote Machine*/
+
+.container-fluid {
+	text-align: center;
+}
+
+button {
+	background: rgba(0, 0, 179, 0.7);
+	color:  rgba(255, 255, 255, 1);
+	border: 1px solid rgba(0, 0, 179, 1);
+	transition: all 0.1s; 
+}
+
+button:hover {
+	background: rgba(0, 0, 179, 0.2);
+	color:  rgba(255, 0, 0, 1);
+	border: 1px solid rgba(0, 0, 179, 1);
+}
+
+#today {
+	font: 2em bold;
+	font-family: helvetica;
+	margin: 10px auto;
+}
+#quote-box {
+	max-width: 40%;
+	background: radial-gradient(rgba(0, 0, 255, .2), rgba(100, 100, 200, 0.5));
+	margin: 30px auto;
+	border-radius: 20px;
+	padding: 5px;
+	
+}
+
+#quote {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 1.2em;
+}

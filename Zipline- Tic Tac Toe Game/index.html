@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+<title>Tic Tac Toe</title>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins)--MUST COME BEFORE OTHER SCRIPTS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<!--Bootstrap FONT AWESOME VECTOR Graphics---To USE:  <i class="fa fa-github"></i> ------>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<!--Custom CSS StyleSheet-->
+<link rel="stylesheet" href="styles/custom.css">
+</head>
+<body>
+<div class="container-fluid">
+
+<h1><code>freeCodeCamp</code></h1>
+<h3><kbd>Tic</kbd><code>Tac</code><kbd>Toe</kbd></h3>
+<h5 id="myTurn">stop cheating</h5>
+<div class="rowR" id="row1" target="#TL">
+	<div class="colC" id="colTL" target="#TL"><p id="TL">&nbsp;</p></div>
+	<div class="colC" id="colTM"><p id="TM">&nbsp;</p></div>
+	<div class="colC" id="colTR"><p id="TR">&nbsp;</p></div>
+</div>
+<div class="rowR" id="row2">
+	<div class="colC" id="colML"><p id="ML">&nbsp;</p></div>
+	<div class="colC" id="colMM"><p id="MM">&nbsp;</p></div>
+	<div class="colC" id="colMR"><p id="MR">&nbsp;</p></div>
+</div>
+<div class="rowR" id="row3">
+	<div class="colC" id="colBL"><p id="BL">&nbsp;</p></div>
+	<div class="colC" id="colBM"><p id="BM">&nbsp;</p></div>
+	<div class="colC" id="colBR"><p id="BR">&nbsp;</p></div>
+</div>
+
+<!-- -------------------------------Modal----------------------------------- -->
+<div id="Modal" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+
+<!--------------------------- Modal content----------------------------------->
+	<div class="modal-content">
+	<div class="modal-header">
+	<!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+	<h4 class="modal-title"><kbd>Tic</kbd><code>Tac</code><kbd>Toe</kbd></h4>
+	</div>
+	<div class="modal-body">
+	<p>Do you want to be X or O?</p>
+	</div>
+	<div class="modal-footer">
+	<button id="buttonX" type="button" onclick="chooseXO('X')" class="btn btn-danger" data-dismiss="modal" >X</button>
+	<button id="buttonO" type="button" onclick="chooseXO('O')" class="btn btn-success" data-dismiss="modal" >O</button>
+	</div>
+	</div>
+
+	</div>
+</div>
+<!-- -------------------------------Modal Win----------------------------------- -->
+<div id="Modal-Win" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+
+<!--------------------------- Modal content----------------------------------->
+	<div class="modal-content">
+	<div class="modal-header">
+	<h4 class="modal-title"><kbd>Tic</kbd><code>Tac</code><kbd>Toe</kbd></h4>
+	</div>
+	<div class="modal-body">
+	<p id="who-won">who won</p>
+	<p>Do you want to play again?</p>
+	</div>
+	<div class="modal-footer">
+	<button id="buttonYes" type="button" onclick="clearBoard()" class="btn btn-success" data-dismiss="modal" >Yes</button>
+	<button id="buttonNo" type="button" onclick="" class="btn btn-danger" data-dismiss="modal" >No</button>
+	</div>
+	</div>
+
+	</div>
+</div>
+
+</div>
+
+<!--LOCAL javascript link file---------->
+<script type="text/javascript" src="scripts/local-scripts.js"></script> 
+</body>
+</html>

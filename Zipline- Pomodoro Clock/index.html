@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+<title>Pomodoro Clock</title>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins)--MUST COME BEFORE OTHER SCRIPTS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<!--Bootstrap FONT AWESOME VECTOR Graphics---To USE:  <i class="fa fa-github"></i> ------>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<!--Custom CSS StyleSheet-->
+<link rel="stylesheet" href="styles/custom.css">
+</head>
+<body>
+<div class="container">
+<h1>freeCodeCamp</h1>
+<h3>Pomodoro Clock</h3>
+<div class="row">
+	<div class="col-xs-6">
+		<div class="controls-container Left-G">
+			<p style="margin-bottom:0px;">BREAK LENGTH</p>
+			<p class="small"><em>(minutes)</em></p>
+			<div class="btn-group btn-group-lg">
+				<button class="btn btn-danger" onclick="subBreak()"><p><i class="fa fa-chevron-circle-down"></i></p></button>
+				<button class="btn btn-default"><p id="break-value">5</p></button>
+				<button class="btn btn-success" onclick="addBreak()"><p><i class="fa fa-chevron-circle-up"></i></p></button>
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-6">
+		<div class="controls-container Right-G">
+			<p style="margin-bottom:0px;">SESSION LENGTH</p>
+			<p class="small"><em>(minutes)</em></p>
+			<div class="btn-group btn-group-lg">
+			<button class="btn btn-danger" onclick="subSession()"><p><i class="fa fa-chevron-circle-down"></i></p></button>
+			<button class="btn btn-default"><p id="session-value">25</p></button>
+			<button class="btn btn-success" onclick="addSession()"><p><i class="fa fa-chevron-circle-up"></i></p></button>
+			</div>
+		</div>
+	</div>
+</div>
+<button id="reset" class="btn btn-primary" onclick="resetTimer()"><i class="fa fa-undo"></i></button>
+<div class="row">
+	<div class="col-xs-12">
+		
+		<div id="clock-container" type="button" onclick="startTimer()">
+			<div id="clock-fill">
+			<div id="display-state"><p id="state">Start</p></div>
+			<div id="pause"></div>
+			<div id="div-line"></div>
+			<div id="display-clock"><p id="timer"></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+<audio id="buzz" controls hidden="hidden">
+	<source src="cheering.mp3" type="audio/mpeg">
+</audio>
+
+<h1 id="today"></h1>
+
+
+
+
+
+
+
+
+
+</div>
+<!--
+<script>
+var jq = $.noConflict();
+jq(document).ready() {
+	jq("#clock-container").mouseenter(function(){
+		
+	});
+}
+</script> -->
+<!--LOCAL javascript link file---------->
+<script type="text/javascript" src="scripts/local-scripts.js"></script> 
+</body>
+</html>

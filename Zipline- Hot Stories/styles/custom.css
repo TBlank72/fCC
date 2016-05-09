@@ -1,0 +1,76 @@
+/*Custom CSS for fCC Hot Stories*/
+
+.container-fluid {
+	color: darkred;
+	text-align: center;
+}
+body {
+  background-color: #e5f2ff;
+}
+.heading {
+  color: #663300;
+  font-weight: bold;
+  font-size: 200%;
+  font-family: Lobster, cursive;
+}
+#posts {
+  width: 90%;
+  transform: translate(5%);
+}
+.post {
+  display: inline-block;
+  width: 200px;
+  height: 400px;
+  margin: 10px 10px -80px 10px; 
+  
+}
+.author-picture {
+  width: 200px;
+  height: 200px;
+  margin: auto auto auto auto;
+  border-top-left-radius: ;
+  border-top-right-radius: ;
+  box-shadow: -2px 0px 2px black;
+  
+}
+.post-description {
+  width: 200px;
+  height: 90px;
+  background-color: white;
+  box-shadow: -2px 2px 2px black;
+}
+.headline p {
+  margin: auto auto auto 5px;
+}
+.headline p#headline-text {
+  font-weight: bold;
+}
+.post-info div a, .post-info div p {
+  display: inline-block;
+  margin: auto auto auto auto;
+}
+.post-info div p {
+  margin: auto auto auto auto;
+}
+.post-info div p#upVotes {
+  float: left;
+  margin-left: 5px;
+}
+.post-info div a {
+  float: right;
+  margin-right: 5px;
+}
+.timePosted {
+  display: inline-block;
+  float: left;
+  margin-left: 5px;
+}
+/* Start of Elapsed Days */
+#elapsedDays {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 30px;
+  opacity: 0.8;
+}
+/* End of Elapsed Days */

@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat|Permanent+Marker);
+/*Custom CSS for Tic Tac Toe Game*/
+
+.container-fluid {
+	background: rgba(102, 102, 153, 1);
+	min-height: 100vh;
+}
+h1 {
+	text-align: center;
+	font-family: Permanent Marker;
+	font-size: 3em;
+}
+h3 {
+	text-align: center;
+	font-family: Permanent Marker;
+	font-size: 5em;
+	margin-bottom: 30px;
+}
+h4 {
+	text-align: center;
+	font-size: 2em;
+}
+h5 {
+	text-align: center;
+	font-size: 1.3em;
+	color: rgba(102, 102, 153, 1);
+}
+code, kbd {
+	font-family: Permanent Marker;
+}
+.rowR {
+	height: 150px;
+	width: 450px;
+	background: black;
+	margin: auto;
+	padding: 4px 0px 0px 6px;
+	position: relative;
+}
+.colC {
+	height: 141px;
+	width: 141px;
+	background: rgba(249, 242, 244,1);
+	margin: 1px;
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	
+}
+.rowR p {
+	position: absolute;
+	margin-left: 41px;
+	margin-top: 10px;
+	font-size: 6em;
+	font-weight: bold;
+	font-family: Permanent Marker;
+	cursor: pointer;
+	color: rgba(199,37,78, 1);
+}
+
+/*-----------------Modal CSS---------------*/
+.modal-content {
+	background: rgba(102, 102, 153, 1);
+	text-align: center;
+	color: white;
+	font-size: 2em;
+}
+#buttonO {
+	display: inline-block;
+	margin-right: 44%;
+}

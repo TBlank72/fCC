@@ -1,0 +1,216 @@
+@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+/*Custom CSS for Simon Game*/
+
+.container-fluid {
+	background: #404040;
+	min-height: 100vh;
+	text-align: center;
+}
+h1 {
+	text-align: center;
+	font-family: Share Tech Mono, Arial, sans-serif;
+	font-size: 3em;
+	color: #C0C0C0;
+	text-shadow: -2px 2px 2px black;
+}
+h3 {
+	text-align: center;
+	font-family: Share Tech Mono, Arial, sans-serif;
+	font-size: 5em;
+	margin-bottom: 10px;
+	color: #C0C0C0;
+	text-shadow: -2px 2px 2px black;
+}
+span {
+	color: white;
+	font-size: 3em;
+	font-family: Share Tech Mono, Arial, sans-serif;
+	margin: 10px auto;
+	vertical-align: bottom;
+	text-shadow: -2px 2px 2px black;
+}
+#level-display-container {
+	height: 45px;
+	width: 60px;
+	background: #660000;
+	display: inline-block;
+	position: relative;
+	margin: 10px auto;
+	vertical-align: bottom;
+	border-radius: 1px;
+	border: 2px solid white;
+	padding: 1px;
+	font-family: Share Tech Mono, Arial, sans-serif;
+	box-shadow: -2px 2px 2px 0px black;
+}
+#level-display-container p {
+	font-size: 3em;
+	color: #FF7F50;
+	float: right;
+	display: block;
+	position: absolute;
+	margin-bottom: -10px;
+	margin-left: 5px;
+	bottom: 0;
+}
+#winner-container {
+	height: 45px;
+	width: 300px;
+	background: rgba(255,255,255,0.9);
+	border: 5px solid rgba(255, 60, 0, 1);
+	outline: 5px solid rgba(200, 40, 0, 1);
+	margin: 2px auto 5px;
+	z-index: 101;
+	display: none;
+}
+#winner {
+	font-size: 2em;
+	font-family: Share Tech Mono, Arial, sans-serif;
+	font-weight: bold;
+	color: rgba(200, 40, 0, 1);
+}
+#game-container {
+	height: 500px;
+	width: 500px;
+	background: white;
+	margin: auto;
+	border-radius: 50%;
+	position: relative;
+	border: ;
+	padding: 0;
+	font-family: Share Tech Mono, Arial, sans-serif;
+	font-size: 1.2em;
+	box-shadow: -5px 5px 5px 0px black;
+}
+#inner-game-container {
+	height: 250px;
+	width: 250px;
+	background: radial-gradient(#404040, #101010);
+	border-radius: 50%;
+	position: absolute;
+	margin: 128px 0px 0px 128px;
+	border: 20px solid #A0A0A0;
+	z-index: 100;
+	box-shadow: -3px 3px 3px 0px black;
+	text-shadow: -1px 1px 1px black;
+}
+#on-off-container {
+	background:;
+	height: 40px;
+	width: 100px;
+	position: relative;
+	margin: 15px auto 5px auto;
+	color: white;
+	
+}
+#on-off-switch-container {
+	background: radial-gradient(#606060, #202020);
+	height: 15px;
+	width: 75px;
+	margin: auto;
+	border-radius: 10px;
+	border: 1px solid #505050;
+	box-shadow: inset -1px 1px 1px 0px black;
+	
+}
+#on-off-switch {
+	height: 12px;
+	width: 35px;
+	float: left;
+	margin: 0px 1px 1px 1px;
+	background: radial-gradient(#CC0000, #6B0606);
+	border-radius: 10px;
+	border: 1px solid #505050;
+	box-shadow: -2px 2px 1px 0px black;
+}
+#start-button-container {
+	height: 70px;
+	width: 100px;
+	background: ;
+	margin: 0px auto;
+	color: white;
+}
+#start-button {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	border: 4px solid #404040;
+	margin: auto;
+	background: radial-gradient(#CC0000, #6B0606);
+	box-shadow: -1px 1px 2px 0px black;
+}
+#strict-mode-container {
+	height: 70px;
+	width: 120px;
+	background:;
+	margin: 5px auto;
+	color: white;
+}
+#strict-button {
+	height: 30px;
+	width: 30px;
+	background: radial-gradient(#CC0000, #6B0606);
+	border-radius: 50%;
+	border: 4px solid #404040;
+	margin: auto;
+	display: inline-block;
+	box-shadow: -1px 1px 2px 0px black;
+}
+#strict-indicator {
+	height: 7px;
+	width: 7px;
+	background: #330000;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 7px 5px 5px 35px;
+}
+#TL {
+	height: 250px;
+	width: 250px;
+	background: #006600;
+	border-radius: 100% 0 0 0;
+	border: 10px solid #A0A0A0;
+	position: absolute;
+	top: 0;
+	margin: 0 0 0 0;
+	box-shadow: inset -3px 3px 3px 0px black;
+	
+}
+#TR {
+	height: 250px;
+	width: 250px;
+	background: #660000;
+	border-radius: 0 100% 0 0;
+	border: 10px solid #A0A0A0;
+	border-left: 13px solid #A0A0A0;
+	position: absolute;
+	top: 0;
+	margin: 0 0 0 250px;
+	box-shadow: inset -3px 3px 3px 0px black;
+}
+#BL {
+	height: 250px;
+	width: 250px;
+	background: #666600;
+	border-radius: 0 0 0 100%;
+	border: 10px solid #A0A0A0;
+	border-top: 13px solid #A0A0A0;
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+	box-shadow: inset -3px 3px 3px 0px black;
+	
+}
+#BR {
+	height: 250px;
+	width: 250px;
+	background: #000066;
+	border-radius: 0 0 100% 0;
+	border: 10px solid #A0A0A0;
+	border-left: 13px solid #A0A0A0;
+	border-top: 13px solid #A0A0A0;
+	position: absolute;
+	bottom: 0;
+	margin: 0 0 0 250px;
+	box-shadow: inset -3px 3px 3px 0px black;
+}

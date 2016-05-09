@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+/*Local CSS for Data Vizualization*/
+.container {
+	margin: auto;
+	text-align: center;
+	font-family: Montserrat;
+}
+h1 {
+	font-size: 3em;
+	font-weight: bold;
+}
+h3 {
+	font-size: 2em;
+}
+#chart {
+	margin: auto;
+}
+svg {
+	background: rgba(0,0,128, 1);
+	box-shadow: 4px 4px 2px 0px black;
+}
+.bar {
+	width: 2px;
+	background: red;
+	margin: 0 1px 0 0;
+	display: inline-block;
+	bottom: 0;
+}
+span {
+	font-size: 1.6em;
+}
+tspan {
+	x: 0;
+	dy: 1.2em;
+}
+.axis path,
+.axis line {
+	fill: none;
+	stroke: white;
+	shape-rendering: crispEdges;
+}
+.axis text {
+	font-family: sans-serif;
+	font-size: 11px;
+	fill: white;
+}
+rect:hover {
+	fill: #ffcc99;
+}
+.d3-tip {
+	color: white;
+	font-family: Montserrat;
+	line-height: 1;
+	font-weight: bold;
+	background: rgba(255,140,0,0.8);
+	border-radius: 5px;
+	padding: 12px;
+	text-shadow: 1px 1px 0px black;
+	box-shadow: 2px 2px 0px 0px rgba(100,80,0,1);
+}
